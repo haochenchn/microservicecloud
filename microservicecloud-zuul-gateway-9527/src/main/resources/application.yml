@@ -16,7 +16,7 @@ eureka:
  
 zuul: 
   #ignored-services: microservicecloud-dept
-  prefix: /atguigu
+  #prefix: /atguigu
   ignored-services: "*"
   routes: 
     mydept.serviceId: microservicecloud-dept
