@@ -8,10 +8,19 @@ public class Dept implements Serializable// entity --orm--- db_table
 	private Long 	dNo; // 主键
 	private String 	dName; // 部门名称
 	private String 	dbSource;// 来自那个数据库，因为微服务架构可以一个服务对应一个数据库，同一个信息被存储到不同数据库
-	
+
+	public Dept() {
+	}
+
 	public Dept(Long dNo)
 	{
 		this.dNo = dNo;
+	}
+
+	public Dept(Long dNo, String dName, String dbSource) {
+		this.dNo = dNo;
+		this.dName = dName;
+		this.dbSource = dbSource;
 	}
 
 	public Long getdNo() {
