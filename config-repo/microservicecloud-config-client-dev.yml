@@ -1,8 +1,5 @@
 info:
-  app:
-    name: microcloud
-  company:
-    name: www.microcloud.com
-  build:
-    artifactId: ${project.artifactId}
-    version: ${project.version}
+  app.name: microcloud
+  company.name: www.microcloud.com
+  build.artifactId: config
+  build.version: V1
