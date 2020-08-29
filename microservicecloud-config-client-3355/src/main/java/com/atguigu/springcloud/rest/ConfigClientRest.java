@@ -8,20 +8,20 @@ import org.springframework.web.bind.annotation.RestController;
 public class ConfigClientRest
 {
 
-	@Value("${spring.application.name}")
-	private String applicationName;
+	@Value("${info.app.name}")
+	private String appName;
 
-	@Value("${eureka.client.service-url.defaultZone}")
-	private String eurekaServers;
+	@Value("${info.build.artifactId}")
+	private String artifactId;
 
-	@Value("${server.port}")
-	private String port;
+	@Value("${info.build.version}")
+	private String version;
 
 	@RequestMapping("/config")
 	public String getConfig()
 	{
-		String str = "applicationName: " + applicationName + "\t eurekaServers:" + eurekaServers + "\t port: " + port;
+		String str = "appName: " + appName + "\t artifactId:" + artifactId + "\t version: " + version;
 		System.out.println("******str: " + str);
-		return "applicationName: " + applicationName + "\t eurekaServers:" + eurekaServers + "\t port: " + port;
+		return str;
 	}
 }

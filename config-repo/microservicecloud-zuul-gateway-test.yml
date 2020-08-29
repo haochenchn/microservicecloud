@@ -25,6 +25,6 @@ zuul:
 info:
   app.name: microcloud-test
   company.name: www.microcloud.com
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}
 
