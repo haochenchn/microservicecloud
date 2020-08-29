@@ -23,8 +23,7 @@ zuul:
     mydept.path: /mydept/**
  
 info:
-  app.name: atguigu-microcloud
-  company.name: www.atguigu.com
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
+  app.name: microservicecloud
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}
 
